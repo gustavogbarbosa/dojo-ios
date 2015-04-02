@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "BrandAcessor.h"
+#import "CarService.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    if ([DBManager createDB]) {
+        [CarService responseFromWebServiceWithCompletionBlock:^(BOOL success, NSError *error) {
+            if (success) {
+                for (Car *car in [CarAcessor getAllCars]) {
+                    NSLog(@"%li, %@", (long) car.idCar, car.name);
+                }
+            } else {
+                NSLog(@"No donut for  you... %@", error);
+            }
+        }];
+    }
     // Override point for customization after application launch.
+    
+    for (Brand *brand in [BrandAcessor getAllBrands]) {
+        NSLog(@"%li, %@", (long) brand.idBrand, brand.name);
+    }
+    
     return YES;
 }
 

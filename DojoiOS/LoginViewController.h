@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DOLogin.h"
+#import "HomeViewController.h"
 
-@interface ViewController : UIViewController
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
+
 
 
 @end
