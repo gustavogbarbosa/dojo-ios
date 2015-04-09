@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DOHome : UIView
+@interface DOBrandList : UIView
 
-@property (nonatomic, strong) IBOutlet UIButton *btnVoltar;
+@property (nonatomic, weak) IBOutlet UITableView *tblView;
 
 - (void)setupWithColor:(UIColor*)color
                andFont:(UIFont*)font

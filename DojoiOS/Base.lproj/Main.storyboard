@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aEG-uS-bbi">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
@@ -16,20 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdn-0D-0Kv">
+                                <rect key="frame" x="108" y="258" width="104" height="51"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="goNext:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6rV-jo-xRd"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhU-ZA-K0O">
-                                <rect key="frame" x="16" y="20" width="304" height="21"/>
+                                <rect key="frame" x="12" y="80" width="296" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULr-ag-FOn">
-                                <rect key="frame" x="16" y="87" width="304" height="21"/>
+                                <rect key="frame" x="12" y="147" width="296" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iJy-9m-iDI">
-                                <rect key="frame" x="16" y="49" width="304" height="30"/>
+                                <rect key="frame" x="12" y="109" width="296" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -37,18 +45,20 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-v3-jTW">
-                                <rect key="frame" x="16" y="116" width="304" height="30"/>
+                                <rect key="frame" x="12" y="176" width="296" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="ugd-qJ-TsJ"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdn-0D-0Kv">
-                                <rect key="frame" x="108" y="258" width="104" height="51"/>
-                                <state key="normal" title="Next"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zym-Gi-GPb">
+                                <rect key="frame" x="123" y="333" width="75" height="30"/>
+                                <state key="normal" title="Gestures">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="goNext:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6rV-jo-xRd"/>
+                                    <segue destination="fiB-Zu-5q7" kind="push" id="YkO-hQ-lFl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,20 +80,80 @@
             </objects>
             <point key="canvasLocation" x="656" y="366"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Gestures View Controller-->
+        <scene sceneID="vyF-xo-UIi">
+            <objects>
+                <viewController id="fiB-Zu-5q7" customClass="GesturesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hjc-U9-ThM"/>
+                        <viewControllerLayoutGuide type="bottom" id="2sH-eD-ccq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U0j-PD-lYf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ferrari.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dxg-2K-Vqn">
+                                <rect key="frame" x="53" y="188" width="214" height="192"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Z3f-NH-5zB" appends="YES" id="sMm-cj-ahZ"/>
+                                    <outletCollection property="gestureRecognizers" destination="tWx-2w-WDc" appends="YES" id="U1C-YV-dbr"/>
+                                    <outletCollection property="gestureRecognizers" destination="2le-AE-nYh" appends="YES" id="Lql-z0-0ZH"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6zH-xa-9mo" appends="YES" id="mrC-9n-Js0"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sxd-HL-rBo"/>
+                    <connections>
+                        <outlet property="imgCar" destination="Dxg-2K-Vqn" id="rh2-ab-tNa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4D-Hj-b15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="Z3f-NH-5zB">
+                    <connections>
+                        <action selector="handleRotate:" destination="fiB-Zu-5q7" id="34S-eD-pAs"/>
+                        <outlet property="delegate" destination="fiB-Zu-5q7" id="wxf-MN-SPd"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="tWx-2w-WDc">
+                    <connections>
+                        <action selector="handlePinch:" destination="fiB-Zu-5q7" id="wwK-a4-2Ju"/>
+                        <outlet property="delegate" destination="fiB-Zu-5q7" id="e2e-fj-cKX"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2le-AE-nYh">
+                    <connections>
+                        <action selector="handlePan:" destination="fiB-Zu-5q7" id="Jkn-hO-nDM"/>
+                        <outlet property="delegate" destination="fiB-Zu-5q7" id="gIm-hA-Mvh"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="6zH-xa-9mo">
+                    <connections>
+                        <action selector="handleTap:" destination="fiB-Zu-5q7" id="Rnt-Zx-bzv"/>
+                        <outlet property="delegate" destination="fiB-Zu-5q7" id="WeV-t1-gKJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="656" y="1089"/>
+        </scene>
+        <!--Brand List View Controller-->
         <scene sceneID="3O0-JE-AcF">
             <objects>
-                <viewController id="bZK-j5-nfL" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="bZK-j5-nfL" customClass="BrandListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fdK-V9-nKg"/>
                         <viewControllerLayoutGuide type="bottom" id="xRk-FS-mPe"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uzj-7C-dq9" customClass="DOHome">
+                    <view key="view" contentMode="scaleToFill" id="uzj-7C-dq9" customClass="DOBrandList">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QqW-YP-SjV">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="bZK-j5-nfL" id="BYL-iP-WKJ"/>
@@ -92,8 +162,24 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="tblView" destination="QqW-YP-SjV" id="mRo-kF-ozF"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="tVV-z4-EIg"/>
+                    <navigationItem key="navigationItem" id="tVV-z4-EIg">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="tyL-kl-eEE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="dRD-HZ-jsQ">
+                                <rect key="frame" x="233" y="7" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openAddNewBrand" destination="bZK-j5-nfL" eventType="touchUpInside" id="c9D-L8-PPH"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="H8k-sI-xWV" kind="push" identifier="segueCars" id="bzv-Vc-QTj"/>
                     </connections>
@@ -110,12 +196,12 @@
                         <viewControllerLayoutGuide type="top" id="Jn6-M7-bm8"/>
                         <viewControllerLayoutGuide type="bottom" id="JmY-WX-nWF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ddq-21-L4Z">
+                    <view key="view" contentMode="scaleToFill" id="ddq-21-L4Z" customClass="DOCar">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-0B-kvi">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="H8k-sI-xWV" id="bza-Va-csD"/>
@@ -150,6 +236,9 @@
             <point key="canvasLocation" x="85" y="366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ferrari.png" width="800" height="510"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

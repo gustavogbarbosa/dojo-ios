@@ -19,16 +19,16 @@
 // );
 
 + (BOOL) saveNewBrand:(Brand *) brandObject{
-    NSString * query = [NSString stringWithFormat:@"INSERT INTO tb_brands(name, isFancy) VALUES('%@',%i)", brandObject.name, brandObject.isFancy];
+    NSString * query = [NSString stringWithFormat:@"INSERT INTO tb_brands(name, isFancy, active) VALUES('%@',%i, %i)", brandObject.name, brandObject.isFancy, brandObject.isActive];
     
-   return [DBManager executeQuery:query];
+    return [DBManager executeQuery:query];
     
 }
 
 + (NSArray *) getAllBrands{
     NSMutableArray * resultArray = [[NSMutableArray alloc] init];
     
-    NSString * query = @"SELECT id_brand, name, isFancy FROM tb_brands";
+    NSString * query = @"SELECT id_brand, name, isFancy, active FROM tb_brands";
     
     sqlite3_stmt * brand_stmt = [DBManager executeStatement:query];
     
@@ -37,6 +37,7 @@
         brand.idBrand = sqlite3_column_int(brand_stmt, 0);
         brand.name = [NSString stringWithUTF8String:(char *)sqlite3_column_text(brand_stmt, 1)];
         brand.isFancy = sqlite3_column_int(brand_stmt, 2);
+        brand.isActive = sqlite3_column_int(brand_stmt, 3);
         
         [resultArray addObject:brand];
     }

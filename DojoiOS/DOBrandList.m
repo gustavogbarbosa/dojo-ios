@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 ciandt. All rights reserved.
 //
 
-#import "DOHome.h"
+#import "DOBrandList.h"
 
-@implementation DOHome
+@implementation DOBrandList
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -23,10 +23,10 @@
                andFont:(UIFont*)font
               andTitle:(NSString*)title {
     
-    [self.btnVoltar setBackgroundColor:color];
-    [self.btnVoltar.titleLabel setFont:font];
-    [self.btnVoltar setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.btnVoltar setTitle:title forState:UIControlStateNormal];
+//    [self.btnVoltar setBackgroundColor:color];
+//    [self.btnVoltar.titleLabel setFont:font];
+//    [self.btnVoltar setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [self.btnVoltar setTitle:title forState:UIControlStateNormal];
 }
 
 

@@ -6,27 +6,43 @@
 //  Copyright (c) 2015 ciandt. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "BrandListViewController.h"
 
-@interface HomeViewController ()
-@property (nonatomic, strong) DOHome *doHome;
+@interface BrandListViewController ()
+@property (nonatomic, strong) DOBrandList *doBrandList;
 @property (nonatomic, strong) NSMutableArray *commonBrandArray;
 @property (nonatomic, strong) NSMutableArray *fancyBrandArray;
 @property (nonatomic, strong) NSArray *brands;
 @end
 
-@implementation HomeViewController
+@implementation BrandListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.title = @"Brands";
  
-    [self.doHome setupWithColor:[UIColor redColor] andFont:[UIFont fontWithName:@"Arial" size:18] andTitle:self.titleButton];
+    [self.doBrandList setupWithColor:[UIColor redColor] andFont:[UIFont fontWithName:@"Arial" size:18] andTitle:self.titleButton];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshTableView) name:@"refreshtableview" object:nil];
+    
+    [self refreshTableView];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)refreshTableView {
     self.commonBrandArray = [[NSMutableArray alloc] init];
     self.fancyBrandArray = [[NSMutableArray alloc] init];
-    
+
     self.brands = [BrandAcessor getAllBrands];
     
     for (Brand *brand in self.brands) {
@@ -37,16 +53,12 @@
         }
     }
     
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
+    [self.doBrandList.tblView reloadData];
 }
 
 
-- (DOHome*)doHome {
-    DOHome* myHome = (DOHome*) self.view;
+- (DOBrandList*)doBrandList {
+    DOBrandList* myHome = (DOBrandList*) self.view;
     return myHome;
 }
 
@@ -131,6 +143,12 @@
     CarsViewController *carsViewController = segue.destinationViewController;
     [carsViewController setBrandId:brand.idBrand];
     carsViewController.brandName = brand.name;
+}
+
+- (IBAction)openAddNewBrand{
+    AddBrandViewController *view = [[AddBrandViewController alloc] init];
+    
+    [self.navigationController pushViewController:view animated:YES];
 }
 
 //

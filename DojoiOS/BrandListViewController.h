@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DOHome.h"
+#import "DOBrandList.h"
 #import "HomeCustomCell.h"
 #import "BrandAcessor.h"
 #import "CarsViewController.h"
+#import "AddBrandViewController.h"
 
-@interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface BrandListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSString *titleButton;
 

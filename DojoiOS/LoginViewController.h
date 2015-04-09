@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DOLogin.h"
-#import "HomeViewController.h"
+#import "BrandListViewController.h"
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
 

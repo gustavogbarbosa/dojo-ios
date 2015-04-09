@@ -35,6 +35,7 @@
     UIAlertController* alertController = [UIAlertController alertControllerWithTitle:cell.lblName.text message:cell.lblInformation.text preferredStyle:UIAlertControllerStyleAlert];
 
     UIAlertAction* actionOK = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:nil];
+    
 
     [alertController addAction:actionOK];
 

@@ -39,9 +39,9 @@
         }
         completion(status, error);
     }];
+    
     [dataTask resume];
 }
-
 
 
 @end

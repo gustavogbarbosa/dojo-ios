@@ -12,7 +12,8 @@ CREATE TABLE IF NOT EXISTS tb_brands
 (
 id_brand INTEGER NOT NULL PRIMARY KEY,
 name TEXT,
-isFancy INTEGER DEFAULT '0' NOT NULL
+isFancy INTEGER DEFAULT '0' NOT NULL,
+active INTEGER DEFAULT '0' NOT NULL
 );
 
-INSERT INTO tb_brands(name, isFancy) VALUES ('Ferrari', 1), ('Lamborghini', 1), ('Porsche', 1), ('Fiat', 0), ('Volks', 0), ('Nissan', 0), ('Ford', 0), ('Chevrolet', 0),  ('Kia', 0), ('Renault', 0);
+INSERT INTO tb_brands(name, isFancy, active) VALUES ('Ferrari', 1, 1), ('Lamborghini', 1, 1), ('Porsche', 1, 1), ('Fiat', 0, 1), ('Volks', 0, 1), ('Nissan', 0, 1), ('Ford', 0, 1), ('Chevrolet', 0, 1),  ('Kia', 0, 1), ('Renault', 0, 1);

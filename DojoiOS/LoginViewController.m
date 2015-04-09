@@ -45,7 +45,7 @@
     
     NSLog(@"nome da segue: %@", segueName);
     if ([segue.identifier isEqualToString:segueName]){
-        HomeViewController* homeViewController = segue.destinationViewController;
+        BrandListViewController* homeViewController = segue.destinationViewController;
         homeViewController.titleButton = @"Back";
     }
 }

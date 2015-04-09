@@ -13,5 +13,6 @@
 @property (nonatomic, assign) NSInteger idBrand;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) BOOL isFancy;
+@property (nonatomic, assign) BOOL isActive;
 
 @end
