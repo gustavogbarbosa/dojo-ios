@@ -24,7 +24,7 @@
     [self.btnNext setBackgroundColor:color];
     [self.btnNext.titleLabel setFont:font];
     [self.btnNext setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    
+    [self.btnNext setTitle:NSLocalizedString(@"Next", nil) forState:UIControlStateNormal];
 }
 
 @end

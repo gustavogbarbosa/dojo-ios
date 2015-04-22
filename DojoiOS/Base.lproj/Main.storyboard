@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aEG-uS-bbi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aEG-uS-bbi">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -59,6 +59,24 @@
                                 </state>
                                 <connections>
                                     <segue destination="fiB-Zu-5q7" kind="push" id="YkO-hQ-lFl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xf6-HA-06O">
+                                <rect key="frame" x="103" y="398" width="115" height="30"/>
+                                <state key="normal" title="Threads">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openThreadManager:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q2Z-oy-Rfw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z11-pc-Qbg">
+                                <rect key="frame" x="103" y="455" width="115" height="30"/>
+                                <state key="normal" title="Download">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Isn-Qm-AQI" kind="push" id="xlH-3O-EEG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -139,6 +157,59 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="656" y="1089"/>
+        </scene>
+        <!--Download View Controller-->
+        <scene sceneID="PDF-dc-dvl">
+            <objects>
+                <viewController id="Isn-Qm-AQI" customClass="DownloadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zNO-8z-S4u"/>
+                        <viewControllerLayoutGuide type="bottom" id="wsI-12-RDJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oUF-g4-DKt" customClass="DODownload">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jb7-93-Eck">
+                                <rect key="frame" x="16" y="88" width="288" height="335"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-wt-PNe">
+                                <rect key="frame" x="150" y="246" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMP-uw-gSn">
+                                <rect key="frame" x="57" y="471" width="75" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.98228377529999999" green="0.98228377529999999" blue="0.98228377529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startDownload" destination="Isn-Qm-AQI" eventType="touchUpInside" id="VLI-2d-Sos"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtZ-N3-HEL">
+                                <rect key="frame" x="197" y="471" width="75" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.98228377529999999" green="0.98228377529999999" blue="0.98228377529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetImage" destination="Isn-Qm-AQI" eventType="touchUpInside" id="I8o-UF-6ZR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="imgView" destination="Jb7-93-Eck" id="uXV-M8-JQC"/>
+                            <outlet property="spinner" destination="Orh-wt-PNe" id="uD7-sr-NdT"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="oUG-mg-mXE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pef-SV-0JY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128" y="1165"/>
         </scene>
         <!--Brand List View Controller-->
         <scene sceneID="3O0-JE-AcF">

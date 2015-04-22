@@ -31,6 +31,12 @@
 		E455BE751AD6CF0700019BC1 /* AddBrandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E455BE731AD6CF0700019BC1 /* AddBrandViewController.xib */; };
 		E455BE781AD6D0F400019BC1 /* DOAddBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = E455BE771AD6D0F400019BC1 /* DOAddBrand.m */; };
 		E45A4D6A1AB1E69B002676B7 /* BrandListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A4D691AB1E69B002676B7 /* BrandListViewController.m */; };
+		E464FF391ADD6F5200C3A0EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E464FF3B1ADD6F5200C3A0EE /* Localizable.strings */; };
+		E472BCC31ADC8C58005CB47D /* DOProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E472BCC21ADC8C58005CB47D /* DOProgressView.m */; };
+		E472BCC71ADC8CC3005CB47D /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E472BCC41ADC8CC3005CB47D /* ProgressViewController.m */; };
+		E472BCC81ADC8CC3005CB47D /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E472BCC61ADC8CC3005CB47D /* ProgressViewController.xib */; };
+		E472BCD51ADCB701005CB47D /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E472BCD41ADCB701005CB47D /* DownloadViewController.m */; };
+		E472BCDA1ADCB853005CB47D /* DODownload.m in Sources */ = {isa = PBXBuildFile; fileRef = E472BCD91ADCB853005CB47D /* DODownload.m */; };
 		E4F53C061AC1B2E6000F7370 /* HomeCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F53C041AC1B2E6000F7370 /* HomeCustomCell.m */; };
 		E4F53C071AC1B2E6000F7370 /* HomeCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F53C051AC1B2E6000F7370 /* HomeCustomCell.xib */; };
 		E4F53C161AC1B426000F7370 /* car-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4F53C0B1AC1B426000F7370 /* car-0.jpg */; };
@@ -104,6 +110,18 @@
 		E455BE771AD6D0F400019BC1 /* DOAddBrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOAddBrand.m; sourceTree = "<group>"; };
 		E45A4D681AB1E69B002676B7 /* BrandListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandListViewController.h; sourceTree = "<group>"; };
 		E45A4D691AB1E69B002676B7 /* BrandListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandListViewController.m; sourceTree = "<group>"; };
+		E464FF341ADD6DE500C3A0EE /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E464FF361ADD6E9500C3A0EE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E464FF3A1ADD6F5200C3A0EE /* de */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E472BCC11ADC8C58005CB47D /* DOProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOProgressView.h; sourceTree = "<group>"; };
+		E472BCC21ADC8C58005CB47D /* DOProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOProgressView.m; sourceTree = "<group>"; };
+		E472BCC41ADC8CC3005CB47D /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		E472BCC51ADC8CC3005CB47D /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		E472BCC61ADC8CC3005CB47D /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
+		E472BCD31ADCB701005CB47D /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		E472BCD41ADCB701005CB47D /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		E472BCD81ADCB853005CB47D /* DODownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DODownload.h; sourceTree = "<group>"; };
+		E472BCD91ADCB853005CB47D /* DODownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DODownload.m; sourceTree = "<group>"; };
 		E4F53C031AC1B2E6000F7370 /* HomeCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCustomCell.h; sourceTree = "<group>"; };
 		E4F53C041AC1B2E6000F7370 /* HomeCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCustomCell.m; sourceTree = "<group>"; };
 		E4F53C051AC1B2E6000F7370 /* HomeCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCustomCell.xib; sourceTree = "<group>"; };
@@ -221,15 +239,12 @@
 		E43BF65C1AAF418600E31AA3 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				E472BCD61ADCB81D005CB47D /* Download */,
+				E472BCD21ADC8DE0005CB47D /* Car */,
+				E472BCD01ADC8D9E005CB47D /* Brand */,
+				E472BCCF1ADC8D98005CB47D /* Login */,
+				E472BCCE1ADC8D91005CB47D /* Progress */,
 				E4F53C021AC1B2A5000F7370 /* CustomCell */,
-				E43BF65E1AAF43D500E31AA3 /* DOLogin.h */,
-				E43BF65F1AAF43D500E31AA3 /* DOLogin.m */,
-				E421D2081AB8785100FD28D8 /* DOBrandList.h */,
-				E421D2091AB8785100FD28D8 /* DOBrandList.m */,
-				E40D805E1AD366AA00B0CADC /* DOCar.h */,
-				E40D805F1AD366AA00B0CADC /* DOCar.m */,
-				E455BE761AD6D0F400019BC1 /* DOAddBrand.h */,
-				E455BE771AD6D0F400019BC1 /* DOAddBrand.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -237,17 +252,12 @@
 		E43BF65D1AAF41D100E31AA3 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				E43BF63C1AAF3E5500E31AA3 /* LoginViewController.h */,
-				E43BF63D1AAF3E5500E31AA3 /* LoginViewController.m */,
-				E45A4D681AB1E69B002676B7 /* BrandListViewController.h */,
-				E45A4D691AB1E69B002676B7 /* BrandListViewController.m */,
-				E450790A1ACD8F9900F60832 /* CarsViewController.h */,
-				E450790B1ACD8F9900F60832 /* CarsViewController.m */,
-				E40D80631AD42E9200B0CADC /* GesturesViewController.h */,
-				E40D80641AD42E9200B0CADC /* GesturesViewController.m */,
-				E455BE711AD6CF0700019BC1 /* AddBrandViewController.h */,
-				E455BE721AD6CF0700019BC1 /* AddBrandViewController.m */,
-				E455BE731AD6CF0700019BC1 /* AddBrandViewController.xib */,
+				E472BCD71ADCB822005CB47D /* Download */,
+				E472BCCD1ADC8D43005CB47D /* Gestures */,
+				E472BCCC1ADC8D3B005CB47D /* Login */,
+				E472BCCB1ADC8D16005CB47D /* Progress */,
+				E472BCCA1ADC8D0F005CB47D /* Car */,
+				E472BCC91ADC8D03005CB47D /* Brand */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -272,6 +282,111 @@
 			name = services;
 			sourceTree = "<group>";
 		};
+		E472BCC91ADC8D03005CB47D /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				E45A4D681AB1E69B002676B7 /* BrandListViewController.h */,
+				E45A4D691AB1E69B002676B7 /* BrandListViewController.m */,
+				E455BE711AD6CF0700019BC1 /* AddBrandViewController.h */,
+				E455BE721AD6CF0700019BC1 /* AddBrandViewController.m */,
+				E455BE731AD6CF0700019BC1 /* AddBrandViewController.xib */,
+			);
+			name = Brand;
+			sourceTree = "<group>";
+		};
+		E472BCCA1ADC8D0F005CB47D /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				E450790A1ACD8F9900F60832 /* CarsViewController.h */,
+				E450790B1ACD8F9900F60832 /* CarsViewController.m */,
+			);
+			name = Car;
+			sourceTree = "<group>";
+		};
+		E472BCCB1ADC8D16005CB47D /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				E472BCC51ADC8CC3005CB47D /* ProgressViewController.h */,
+				E472BCC41ADC8CC3005CB47D /* ProgressViewController.m */,
+				E472BCC61ADC8CC3005CB47D /* ProgressViewController.xib */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+		E472BCCC1ADC8D3B005CB47D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E43BF63C1AAF3E5500E31AA3 /* LoginViewController.h */,
+				E43BF63D1AAF3E5500E31AA3 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		E472BCCD1ADC8D43005CB47D /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				E40D80631AD42E9200B0CADC /* GesturesViewController.h */,
+				E40D80641AD42E9200B0CADC /* GesturesViewController.m */,
+			);
+			name = Gestures;
+			sourceTree = "<group>";
+		};
+		E472BCCE1ADC8D91005CB47D /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				E472BCC11ADC8C58005CB47D /* DOProgressView.h */,
+				E472BCC21ADC8C58005CB47D /* DOProgressView.m */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+		E472BCCF1ADC8D98005CB47D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E43BF65E1AAF43D500E31AA3 /* DOLogin.h */,
+				E43BF65F1AAF43D500E31AA3 /* DOLogin.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		E472BCD01ADC8D9E005CB47D /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				E421D2081AB8785100FD28D8 /* DOBrandList.h */,
+				E421D2091AB8785100FD28D8 /* DOBrandList.m */,
+				E455BE761AD6D0F400019BC1 /* DOAddBrand.h */,
+				E455BE771AD6D0F400019BC1 /* DOAddBrand.m */,
+			);
+			name = Brand;
+			sourceTree = "<group>";
+		};
+		E472BCD21ADC8DE0005CB47D /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				E40D805E1AD366AA00B0CADC /* DOCar.h */,
+				E40D805F1AD366AA00B0CADC /* DOCar.m */,
+			);
+			name = Car;
+			sourceTree = "<group>";
+		};
+		E472BCD61ADCB81D005CB47D /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				E472BCD81ADCB853005CB47D /* DODownload.h */,
+				E472BCD91ADCB853005CB47D /* DODownload.m */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
+		E472BCD71ADCB822005CB47D /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				E472BCD31ADCB701005CB47D /* DownloadViewController.h */,
+				E472BCD41ADCB701005CB47D /* DownloadViewController.m */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
 		E4F53C021AC1B2A5000F7370 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +405,7 @@
 			children = (
 				E4F53C281AC1B9D4000F7370 /* Data */,
 				E4F53C0A1AC1B426000F7370 /* images */,
+				E464FF3B1ADD6F5200C3A0EE /* Localizable.strings */,
 			);
 			name = Resources;
 			path = DojoiOS;
@@ -437,12 +553,14 @@
 				E4F53C1C1AC1B426000F7370 /* car-4.jpg in Resources */,
 				E4F53C161AC1B426000F7370 /* car-0.jpg in Resources */,
 				E43BF6411AAF3E5500E31AA3 /* Main.storyboard in Resources */,
+				E472BCC81ADC8CC3005CB47D /* ProgressViewController.xib in Resources */,
 				E4F53C1E1AC1B426000F7370 /* car-6.jpg in Resources */,
 				E43BF6461AAF3E5500E31AA3 /* LaunchScreen.xib in Resources */,
 				E4F53C1D1AC1B426000F7370 /* car-5.jpg in Resources */,
 				E43BF6431AAF3E5500E31AA3 /* Images.xcassets in Resources */,
 				E4F53C201AC1B426000F7370 /* car-9.jpg in Resources */,
 				E4F53C1B1AC1B426000F7370 /* car-3.jpg in Resources */,
+				E464FF391ADD6F5200C3A0EE /* Localizable.strings in Resources */,
 				E4F53C181AC1B426000F7370 /* car-10.jpg in Resources */,
 				E455BE751AD6CF0700019BC1 /* AddBrandViewController.xib in Resources */,
 				E4F53C171AC1B426000F7370 /* car-1.jpg in Resources */,
@@ -471,6 +589,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45078FE1ACAECD200F60832 /* Car.m in Sources */,
+				E472BCC31ADC8C58005CB47D /* DOProgressView.m in Sources */,
+				E472BCDA1ADCB853005CB47D /* DODownload.m in Sources */,
 				E40D80651AD42E9200B0CADC /* GesturesViewController.m in Sources */,
 				E450790C1ACD8F9900F60832 /* CarsViewController.m in Sources */,
 				E45078FB1ACAEC5600F60832 /* Brand.m in Sources */,
@@ -479,6 +599,7 @@
 				E45079021ACAED8900F60832 /* BrandAcessor.m in Sources */,
 				E43BF6601AAF43D500E31AA3 /* DOLogin.m in Sources */,
 				E4F53C061AC1B2E6000F7370 /* HomeCustomCell.m in Sources */,
+				E472BCD51ADCB701005CB47D /* DownloadViewController.m in Sources */,
 				E45079051ACAED9800F60832 /* CarAcessor.m in Sources */,
 				E421D20A1AB8785100FD28D8 /* DOBrandList.m in Sources */,
 				E45079091ACAF73500F60832 /* CarService.m in Sources */,
@@ -488,6 +609,7 @@
 				E45A4D6A1AB1E69B002676B7 /* BrandListViewController.m in Sources */,
 				E45079101ACDA04C00F60832 /* CarCustomCell.m in Sources */,
 				E43BF6381AAF3E5500E31AA3 /* main.m in Sources */,
+				E472BCC71ADC8CC3005CB47D /* ProgressViewController.m in Sources */,
 				E4F53C271AC1B90E000F7370 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,8 +645,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				E43BF6451AAF3E5500E31AA3 /* Base */,
+				E464FF341ADD6DE500C3A0EE /* pt */,
+				E464FF361ADD6E9500C3A0EE /* de */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E464FF3B1ADD6F5200C3A0EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E464FF3A1ADD6F5200C3A0EE /* de */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

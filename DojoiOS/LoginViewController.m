@@ -101,19 +101,9 @@
     return YES;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- (IBAction)openThreadManager:(id)sender {
+    ProgressViewController* progressView = [[ProgressViewController alloc]init];
+    [self.navigationController pushViewController:progressView animated:YES];
+}
 
 @end

@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "DOLogin.h"
 #import "BrandListViewController.h"
+#import "ProgressViewController.h"
+#import "DownloadViewController.h"
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
-
-
 
 @end
 
